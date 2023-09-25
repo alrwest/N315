@@ -1,0 +1,53 @@
+.hero-wrapper {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #07060c;
+}
+
+.hero {
+    width: 100%;
+    background-image: url('../images/sandwich-hero.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+
+.hero-logo-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    max-width: 120px;
+    max-height: 120px;
+    opacity: 0.7;
+}
+
+.hero-logo-text {
+    font-family: "dicsans-ultrablack", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    margin-left: 15px;
+}
+
+
+.hero-logo-text > div:first-child {
+    margin-bottom: -60px; 
+}
+
+.hero-logo-line-one {
+    color: #D9CB04;
+    text-shadow: 12px 3px #141A26, 14px 6px #F2F2F2;
+}
+.hero-logo-line-two {
+    color: #141a26;
+    text-shadow: 6px 2px #D9CB04, 8px 4px #F2F2F2;
+}
+

@@ -1,0 +1,78 @@
+
+.footer {
+  background-color: #F24C3D;
+  min-height: 250px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 4;
+}
+
+.footer-logo-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: -30px;
+  margin-left: 50px;
+}
+
+.footer-logo-img {
+  max-width: 120px;
+  max-height: 120px;
+  opacity: 0.7;
+}
+
+.footer-logo-text {
+  font-family: "dicsans-ultrablack", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.footer-logo-line-one {
+  color: #D9CB04;
+  text-shadow: 5px 1px #141A26;
+  margin-bottom: -25px;
+}
+
+.footer-logo-line-two {
+  color: #141A26;
+  text-shadow: 3px 1px #D9CB04;
+}
+
+.footer-content-wrapper {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.footer-content {
+  padding: 20px;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content h3 {
+  color: #141A26;
+  font-family: "dicsans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  opacity: 0.8;
+}
+
+.footer-content p {
+  color: #f2f2f2;
+  font-family: "dicsans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+

@@ -1,0 +1,19 @@
+# General 
+.DS_Store 
+.Trashes 
+ 
+ # node_modules
+/node_modules
+.vscode
+.npm
+ 
+#project 
+ /css/styles.css.map 
+
+#for prepros
+.prepros
+
+
+
+
+

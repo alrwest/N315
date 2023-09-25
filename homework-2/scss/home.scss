@@ -1,0 +1,36 @@
+//Styling for home page
+
+.wrapper {
+   max-height: 50%;
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 50px;
+}
+
+.hero {
+    display: flex;
+    height: 250px;
+    width: 100%;
+    justify-content: center;
+    background-image: url(../images/hero.jpeg);
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+img {
+    max-width: 250px;
+    max-height: 250px;
+}

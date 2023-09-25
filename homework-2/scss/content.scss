@@ -1,0 +1,29 @@
+.content-wrapper { 
+    width: 100%; 
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content-child {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+    color: #fff;
+   // background-color: aqua;
+
+}
+.content-child h3, p {
+    margin-top: 10px;
+}
+.content-child span img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
