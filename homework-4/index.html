@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 4</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#Home" data-page="Home">Home</a>
+      <a href="#Login" data-page="Login">Login</a>
+      <div id="Signup">Sign Up</div>
+    </nav>
+    <div id="app"></div>
+    <footer></footer>
+    <div id="modal">
+      <div id="modal-click-background" class="close"></div>
+      <div class="modal-content-holder">
+        <div class="close-button close">X</div>
+        <p> Login to our site! </p>
+        <div class="text-input"> Username..</div>
+        <div class="text-input"> Password...</div>
+        <div class="modal-button-container">
+          <span class="close-cancel close">Login</span>
+          <span class="close-cancel close">Close</span>
+        </div>
+    </div>
+    <!-- SCRIPTS-->
+    <script type="module" src="lib/jquery-3.1.7.min.js"></script>
+    <script type="module" src="app/app.js"></script>
+    <script type="module" src="model/model.js"></script>
+  </body>
+</html>
