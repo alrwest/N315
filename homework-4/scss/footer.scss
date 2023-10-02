@@ -4,4 +4,21 @@ footer {
     height: 100px;
     width: 100%;
     background-color: #3b325e;
+    color: #F2F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 50px;
+
+
+    footer .logo-wrapper {
+       height: 300px;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-content: center;
+       padding: 50px;
+
+    }
 }

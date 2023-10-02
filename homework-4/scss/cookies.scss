@@ -1,0 +1,24 @@
+.cookies-wrapper {
+    min-height: 600px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url("../images/butter-hero.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.7;
+
+    .cookie-content {
+        margin: 20px;
+        padding: 50px;
+        
+        img {
+            max-width: 150px;
+            max-height: 150px;
+            border-radius: 5%;
+        }
+    }
+}

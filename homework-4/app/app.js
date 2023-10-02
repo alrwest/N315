@@ -9,6 +9,19 @@ function initModalListeners() {
     $(".close").on("click", (e) => {
         $("#modal").removeClass("active");
     });
+
+    //submit
+    $("#login-button").on("click", (e) => {
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Login Successful!'
+          });
+        
+          //hide modal on login
+        $("#modal").removeClass("active");
+    });
+    
 }
 
 $(document).ready(function() {

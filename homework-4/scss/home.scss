@@ -13,7 +13,7 @@
         text-align: center;
         padding: 20px;
         margin: 0 auto;
-        background-color: rgb(202, 202, 167);
+        background-color: #cacaa7;
     }
 
     .home-content p {
@@ -22,5 +22,11 @@
         justify-content: center;
         margin: 0 auto;
         color: #F2F2F2;
+     }
+
+     .home-content img {
+        max-width: 100%;
+        max-height: fit-content;
+        border-radius: 10%;
      }
 }

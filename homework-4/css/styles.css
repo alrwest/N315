@@ -16,16 +16,57 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 nav {
+  width: 100%;
   height: 75px;
   background-color: #3b325e;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  padding-left: 50px;
 }
-nav a {
+nav .logo-wrapper {
+  height: 100px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+nav .logo-wrapper h2 {
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #F2F2F2;
+}
+nav .nav-wrapper {
+  width: 75;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 10px;
+  margin-left: 500px;
+}
+nav .nav-wrapper a, nav .nav-wrapper #Signup {
   padding: 20px;
   color: #F2F2F2;
   text-decoration: none;
+  font-size: 14px;
+}
+nav .nav-wrapper a:active {
+  text-decoration: underline;
+}
+nav .nav-wrapper #Signup {
+  width: 80px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #cacaa7;
+  border-radius: 5%;
+  margin-left: 50px;
 }
 
 #modal {
@@ -33,10 +74,11 @@ nav a {
   width: 100%;
   height: 100%;
   top: 0;
-  z-index: 99;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999;
   visibility: hidden;
 }
 #modal #modal-click-background {
@@ -48,44 +90,62 @@ nav a {
 }
 #modal .modal-content-holder {
   position: relative;
-  min-height: 200px;
+  min-height: 500px;
   min-width: 400px;
   max-width: 60%;
-  border-radius: 10%;
-  background-color: #f2f2f2;
-  z-index: 99;
+  margin: 0 auto;
   padding: 50px;
   text-align: center;
+  border-radius: 10%;
+  background-color: #f2f2f2;
+  border-radius: 15%;
+  box-shadow: 0 0 15px rgba(59, 50, 94, 0.6);
   display: flex;
   justify-content: center;
-  margin: 20pz;
   align-items: center;
   flex-direction: column;
 }
+#modal .modal-content-holder i {
+  margin: 20px 0px;
+}
 #modal .modal-content-holder .close-button {
-  background-color: #8f8b8b;
   position: absolute;
-  height: 15px;
-  width: 15px;
-  right: 0;
+  top: 10px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+#modal .modal-content-holder .text-input {
+  background-color: rgba(202, 202, 167, 0.7);
+  width: 75%;
+  color: rgba(59, 50, 94, 0.6);
+  margin: 15px;
   padding: 10px;
-  margin: 10px;
+  text-align: left;
+  opacity: 0.7;
+  border-radius: 3px;
 }
 #modal .modal-content-holder .modal-button-container {
-  height: 200px;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-}
-#modal .modal-content-holder .modal-button-container .close-cancel {
-  height: 40px;
-  width: 150px;
-  border-radius: 5%;
-  margin: 10px;
-  padding: 5px 15px;
-  background-color: rebeccapurple;
-  font: 10px;
+  align-items: center;
   text-align: center;
+  flex-direction: column;
+  margin-top: 75px;
+}
+#modal .modal-content-holder .modal-button-container .modal-button {
+  height: 40px;
+  width: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 15px;
+  border-radius: 10px;
+  font: 10px;
+  background-color: #3b325e;
+  color: #F2F2F2;
 }
 
 #modal.active {
@@ -107,7 +167,7 @@ nav a {
   text-align: center;
   padding: 20px;
   margin: 0 auto;
-  background-color: rgb(202, 202, 167);
+  background-color: #cacaa7;
 }
 .home-wrapper .home-content p {
   text-align: center;
@@ -116,6 +176,11 @@ nav a {
   margin: 0 auto;
   color: #F2F2F2;
 }
+.home-wrapper .home-content img {
+  max-width: 100%;
+  max-height: fit-content;
+  border-radius: 10%;
+}
 
 footer {
   bottom: 0;
@@ -123,6 +188,43 @@ footer {
   height: 100px;
   width: 100%;
   background-color: #3b325e;
+  color: rgba(242, 242, 242, 0.9490196078);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 50px;
+}
+footer footer .logo-wrapper {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 50px;
+}
+
+.cookies-wrapper {
+  min-height: 600px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  background-image: url("../images/butter-hero.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.7;
+}
+.cookies-wrapper .cookie-content {
+  margin: 20px;
+  padding: 50px;
+}
+.cookies-wrapper .cookie-content img {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 5%;
 }
 
 /*# sourceMappingURL=styles.css.map */
