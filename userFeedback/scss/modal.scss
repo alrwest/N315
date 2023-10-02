@@ -1,0 +1,48 @@
+#modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #modal-click-background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(48, 47, 47, 0.7);
+        z-index: -1;
+    }
+
+
+    .modal-content-holder {
+        position: relative;
+        min-height: 300px;
+        min-width: 400px;
+        max-width: 60%;
+        border-radius: 10%;
+        background-color: #f2f2f2;
+        z-index: 99;
+        padding: 10px;
+        text-align: center;
+
+        .close-button {
+           background-color: #8f8b8b;
+           position: absolute;
+           height: 15px;
+           width: 15px;
+           right: 0;
+           padding: 10px;
+           margin: 10px;
+        }
+
+        .close-cancel {
+            padding: 5px 15px;
+            background-color: rebeccapurple;
+            font: 10px;
+        }
+    }
+
+}

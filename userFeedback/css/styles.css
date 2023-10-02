@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+#app {
+  min-height: 100vh;
+  background-color: rgba(67, 217, 84, 0.6);
+}
+
+nav {
+  height: 75px;
+  background-color: #191818;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+a {
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  color: #f2f2f2;
+  margin: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #a752cf;
+  border-radius: 50%;
+}
+
+#modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal #modal-click-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(48, 47, 47, 0.7);
+  z-index: -1;
+}
+#modal .modal-content-holder {
+  position: relative;
+  min-height: 300px;
+  min-width: 400px;
+  max-width: 60%;
+  border-radius: 10%;
+  background-color: #f2f2f2;
+  z-index: 99;
+  padding: 10px;
+  text-align: center;
+}
+#modal .modal-content-holder .close-button {
+  background-color: #8f8b8b;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  right: 0;
+  padding: 10px;
+  margin: 10px;
+}
+#modal .modal-content-holder .close-cancel {
+  padding: 5px 15px;
+  background-color: rebeccapurple;
+  font: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

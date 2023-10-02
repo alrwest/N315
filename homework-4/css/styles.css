@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #eae8eb;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+nav {
+  height: 75px;
+  background-color: #3b325e;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav a {
+  padding: 20px;
+  color: #F2F2F2;
+  text-decoration: none;
+}
+
+#modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+#modal #modal-click-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(59, 50, 94, 0.6);
+  z-index: -1;
+}
+#modal .modal-content-holder {
+  position: relative;
+  min-height: 200px;
+  min-width: 400px;
+  max-width: 60%;
+  border-radius: 10%;
+  background-color: #f2f2f2;
+  z-index: 99;
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 20pz;
+  align-items: center;
+  flex-direction: column;
+}
+#modal .modal-content-holder .close-button {
+  background-color: #8f8b8b;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  right: 0;
+  padding: 10px;
+  margin: 10px;
+}
+#modal .modal-content-holder .modal-button-container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#modal .modal-content-holder .modal-button-container .close-cancel {
+  height: 40px;
+  width: 150px;
+  border-radius: 5%;
+  margin: 10px;
+  padding: 5px 15px;
+  background-color: rebeccapurple;
+  font: 10px;
+  text-align: center;
+}
+
+#modal.active {
+  visibility: visible;
+}
+
+.home-wrapper {
+  max-width: 100%;
+  height: 400px;
+  display: flex;
+  margin: 100px 75px;
+}
+.home-wrapper .home-content {
+  width: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: rgb(202, 202, 167);
+}
+.home-wrapper .home-content p {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  color: #F2F2F2;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  background-color: #3b325e;
+}
+
+/*# sourceMappingURL=styles.css.map */

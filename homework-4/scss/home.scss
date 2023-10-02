@@ -1,0 +1,26 @@
+.home-wrapper {
+    max-width: 100%;
+    height: 400px;
+    display: flex;
+    margin: 100px 75px;
+
+    .home-content {
+        width: 500px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        margin: 0 auto;
+        background-color: rgb(202, 202, 167);
+    }
+
+    .home-content p {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        color: #F2F2F2;
+     }
+}

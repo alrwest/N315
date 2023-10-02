@@ -1,0 +1,19 @@
+{
+  "name": "userfeedback",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "server": "live-server",
+    "compile-sass": "sass scss/styles.scss css/styles.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.68.0"
+  }
+}
