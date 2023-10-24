@@ -1,7 +1,26 @@
 footer {
     bottom: 0;
     position: fixed;
-    height: 100px;
+    height: 75px;
     width: 100%;
     background-color: #3b325e;
+    color: #F2F2F2F2;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer .logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .logo-wrapper h2 {
+    margin-top: 15px;
+}
+footer .logo-wrapper i {
+    margin: 5px 20px;
 }

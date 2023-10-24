@@ -5,27 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 4</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/d5f6e67548.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <nav>
-      <a href="#Home" data-page="Home">Home</a>
-      <a href="#Login" data-page="Login">Login</a>
-      <div id="Signup">Sign Up</div>
+      <div class="logo-wrapper">
+        <i class="fa-solid fa-cookie fa-2xl" style="color: #f2f2f2"></i>
+        <h2>Creative Cookies</h2>
+      </div>
+      <div class="nav-wrapper">
+        <a href="#Home" data-page="Home">Home</a>
+        <a href="#Cookies" data-page="Cookies">Cookies</a>
+        <div id="Signup">Sign Up</div>
+      </div>
     </nav>
     <div id="app"></div>
-    <footer></footer>
+    <footer>
+      <div class="logo-wrapper">
+        <i class="fa-solid fa-cookie fa-2xl" style="color: #f2f2f2"></i>
+        <h2>Creative Cookies &copy;</h2>
+      </div>
+    </footer>
     <div id="modal">
       <div id="modal-click-background" class="close"></div>
       <div class="modal-content-holder">
-        <div class="close-button close">X</div>
-        <p> Login to our site! </p>
-        <div class="text-input"> Username..</div>
-        <div class="text-input"> Password...</div>
-        <div class="modal-button-container">
-          <span class="close-cancel close">Login</span>
-          <span class="close-cancel close">Close</span>
+        <div class="close-button close">
+          <i class="fa-solid fa-circle-xmark" style="color: #3b325e"></i>
         </div>
+        <h2>Login to Creative Cookies!</h2>
+        <i class="fa-solid fa-cookie fa-beat fa-2xl" style="color: #3b325e"></i>
+        <div class="text-input">Username..</div>
+        <div class="text-input">Password...</div>
+        <div class="modal-button-container">
+          <div id="login-button" class="modal-button">Submit</div>
+          <div class="modal-button" class="modal-button-close">Close</div>
+        </div>
+      </div>
     </div>
+
     <!-- SCRIPTS-->
     <script type="module" src="lib/jquery-3.1.7.min.js"></script>
     <script type="module" src="app/app.js"></script>
