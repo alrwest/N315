@@ -1,6 +1,7 @@
 footer {
     bottom: 0;
     position: fixed;
+<<<<<<< HEAD
     height: 75px;
     width: 100%;
     background-color: #3b325e;
@@ -23,4 +24,26 @@ footer .logo-wrapper h2 {
 }
 footer .logo-wrapper i {
     margin: 5px 20px;
+=======
+    height: 100px;
+    width: 100%;
+    background-color: #3b325e;
+    color: #F2F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 50px;
+
+
+    footer .logo-wrapper {
+       height: 300px;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-content: center;
+       padding: 50px;
+
+    }
+>>>>>>> origin/main
 }

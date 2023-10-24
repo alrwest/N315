@@ -1,10 +1,18 @@
 // routing
 $(document).ready(function() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
     // Set default page/home screen
     function defaultPage() {
         // Using AJAX
         $.ajax({
+<<<<<<< HEAD
             url: 'https://in-info-web4.informatics.iupui.edu/~alrwest/N315/homework-4/pages/Home.html',
+=======
+            url: '../pages/home.html',
+>>>>>>> origin/main
             method: 'GET',
             dataType: 'html',
             success: function(response) {
@@ -25,7 +33,11 @@ $(document).ready(function() {
         var page = $(this).data('page');
         // Using AJAX
         $.ajax({
+<<<<<<< HEAD
             url: 'https://in-info-web4.informatics.iupui.edu/~alrwest/N315/homework-4/pages/' + page + '.html',
+=======
+            url: '../pages/' + page + '.html',
+>>>>>>> origin/main
             method: 'GET',
             dataType: 'html',
             success: function(response) {
@@ -40,7 +52,11 @@ $(document).ready(function() {
     $('#login-button').click(function(event) {
         // Using AJAX
         $.ajax({
+<<<<<<< HEAD
             url: 'https://in-info-web4.informatics.iupui.edu/~alrwest/N315/homework-4/pages/Cookies.html',
+=======
+            url: '../pages/Cookies.html',
+>>>>>>> origin/main
             method: 'GET',
             dataType: 'html',
             success: function(response) {
