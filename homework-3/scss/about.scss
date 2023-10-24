@@ -1,6 +1,23 @@
+h2 {
+    text-align: center;
+    color:#D9CB04;
+}
+
 .about-content {
-    height: 700px;
-    width: 100%;
-    background-color: white;
-    color: red;
+    height: 200px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    color: #D9CB04;
+}
+
+.about-hero img {
+    max-height: 400px;
+    max-width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }

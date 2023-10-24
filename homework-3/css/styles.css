@@ -97,13 +97,14 @@ nav a:hover {
 }
 
 .icon-wrapper {
-  display: inline-block;
-  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-wrapper i {
-  margin-top: 12px;
-  padding: 16px;
+  color: #F2F2F2;
 }
 
 .footer {
@@ -404,6 +405,30 @@ nav a:hover {
   font-family: "dicsans", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+h2 {
+  text-align: center;
+  color: #D9CB04;
+}
+
+.about-content {
+  height: 200px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  color: #D9CB04;
+}
+
+.about-hero img {
+  max-height: 400px;
+  max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
