@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jungle Cook</title>
+    <title></title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="nav-holder">
       <div class="logo">
-        <img src="assets/logo.svg" alt="jungle-logo">
+        <img src="assets/logo.svg" alt="jungle-logo" />
       </div>
       <nav>
         <ul>
-          <li><a href="#Home"></a> Home</li>
-          <li><a href="#Browse"></a> Browse</li>
-          <li><a href="#Create"></a> Create</li>
-          <li><a href="#Recipe"></a> Recipe</li>
-          <li class="login"><a href="#login"></a> Login</li>
+          <li><a id="home" href="#Home"></a> Home</li>
+          <li><a id="browse" href="#Browse"></a> Browse</li>
+          <li><a id="create" href="#Create"></a> Create</li>
+          <li><a id="recipe" href="#Recipe"></a> Recipe</li>
+          <li class="login"><a id="Login" href="#login"></a> Login</li>
         </ul>
       </nav>
       <!-- Mobile Nav/Hamburger 
@@ -33,11 +33,10 @@
           <li class="login"><a href="#login"></a> Login</li>
         </ul>
       </div>
-    </div>
-  -->
+    --></div>
     <div id="app"></div>
     <script type="module" src="lib/jquery-3.7.1.min.js"></script>
-    <script type="module" src="model/model.js"></script>
     <script type="module" src="app/app.js"></script>
+    <script type="module" src="app/model.js"></script>
   </body>
 </html>

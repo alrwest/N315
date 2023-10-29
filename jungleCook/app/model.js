@@ -3,7 +3,7 @@ export function createContent(pageName) {
     document.title = `${pageName} | JungleCook`
     //using ajax request to get pageName
     $.ajax({
-        url: `${pageName}.html`,
+        url: `../pages/${pageName}.html`,
         type: "GET",
         dataType: "html",
         success: function(data) {

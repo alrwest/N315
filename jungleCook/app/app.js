@@ -1,5 +1,4 @@
-
-import { createContent } from "../model/model";
+import { createContent } from '../app/model.js';
 
 function initListeners() {
     $("nav a").on("click", (e) => {
@@ -13,5 +12,6 @@ function initListeners() {
 $(document).ready(function () 
 {
     initListeners();
-    createContent("Home"); //default page
+    createContent("home"); //default page
 });
+
