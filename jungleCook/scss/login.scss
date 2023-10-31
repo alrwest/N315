@@ -1,0 +1,71 @@
+/*.login-wrapper {
+    height: 800px;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input, label {
+    display: block;
+}
+
+label {
+    border-bottom:  2px solid black;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+.signIn {
+    padding: 30px;
+    //width: 50%;
+   // height: 100%;
+}
+
+.createAccount {
+    //width: 50%;
+   // height: 100%;
+    padding: 30px;
+}
+
+*/
+
+.login-wrapper {
+    width: 1280px;
+    height: 1000px;
+    background-color: green;
+    //flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 50px;
+    padding: 272px 0;
+}
+
+.login-form {
+    width: 500px;
+    height: 800px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+label {
+    width: 50px;
+    border-bottom: 2px solid black;
+}
+.signup-form {
+    width: 500px;
+    height: 800px;
+    background-color: red;
+}

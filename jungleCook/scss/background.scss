@@ -1,0 +1,12 @@
+//dynamically update background based off of route name
+
+
+.home {
+    background-image: linear-gradient(rgba(242, 92, 84,0.6), rgba(242, 92, 84,0.6)), url("../assets/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login {
+    background-color: #FFD972;
+}

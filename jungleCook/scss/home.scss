@@ -6,3 +6,39 @@
     height: 100%;
     object-fit: fill;
 }
+
+
+//content
+.content {
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle1 {
+    width: 350px;
+    height: 350px;
+    background-color: #FFD972;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+.circle2 {
+    width: 175px;
+    height: 175px;
+    background-color: #FCBCB8;
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 350px;
+}
