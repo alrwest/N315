@@ -1,30 +1,30 @@
 @font-face {
   font-family: "Caveat-Bold";
-  src: url("/css/fonts/Caveat-Bold.ttf");
+  src: url("../css/fonts/Caveat-Bold.ttf");
 }
 @font-face {
   font-family: "Caveat-Regular";
-  src: url("/css/fonts/Caveat-Regular.ttf");
+  src: url("../css/fonts/Caveat-Regular.ttf");
 }
 @font-face {
   font-family: "GillSans Italic";
-  src: url("/css/fonts/GillSansItalic.ttf");
+  src: url("../css/fonts/GillSansItalic.ttf");
 }
 @font-face {
-  font-family: "GillSans Italic";
-  src: url("/css/fonts/GillSans Italic.ttf");
+  font-family: "GillSans";
+  src: url("../css/fonts/GillSans.ttf");
 }
 @font-face {
   font-family: "GillSans Light";
-  src: url("/css/fonts/GillSans-Light.ttf");
+  src: url("../css/fonts/GillSans-Light.ttf");
 }
 @font-face {
   font-family: "Lato";
-  src: url("/css/fonts/Lato/Lato-Regular.ttf");
+  src: url("../css/fonts/Lato/Lato-Regular.ttf");
 }
 @font-face {
   font-family: "Lato Italic";
-  src: url("/css/fonts/Lato/Lato-Italic.ttf");
+  src: url("../css/fonts/Lato/Lato-Italic.ttf");
 }
 :root {
   --green: #A7E8BD;
@@ -46,6 +46,7 @@
   border-radius: 80px;
   background-color: var(--yellow);
   box-shadow: 2px 6px 8px rgba(24, 22, 22, 0.5);
+  cursor: pointer;
 }
 
 footer {
@@ -84,31 +85,31 @@ footer .social-media img {
 
 @font-face {
   font-family: "Caveat-Bold";
-  src: url("/css/fonts/Caveat-Bold.ttf");
+  src: url("../css/fonts/Caveat-Bold.ttf");
 }
 @font-face {
   font-family: "Caveat-Regular";
-  src: url("/css/fonts/Caveat-Regular.ttf");
+  src: url("../css/fonts/Caveat-Regular.ttf");
 }
 @font-face {
   font-family: "GillSans Italic";
-  src: url("/css/fonts/GillSansItalic.ttf");
+  src: url("../css/fonts/GillSansItalic.ttf");
 }
 @font-face {
-  font-family: "GillSans Italic";
-  src: url("/css/fonts/GillSans Italic.ttf");
+  font-family: "GillSans";
+  src: url("../css/fonts/GillSans.ttf");
 }
 @font-face {
   font-family: "GillSans Light";
-  src: url("/css/fonts/GillSans-Light.ttf");
+  src: url("../css/fonts/GillSans-Light.ttf");
 }
 @font-face {
   font-family: "Lato";
-  src: url("/css/fonts/Lato/Lato-Regular.ttf");
+  src: url("../css/fonts/Lato/Lato-Regular.ttf");
 }
 @font-face {
   font-family: "Lato Italic";
-  src: url("/css/fonts/Lato/Lato-Italic.ttf");
+  src: url("../css/fonts/Lato/Lato-Italic.ttf");
 }
 :root {
   --green: #A7E8BD;
@@ -130,6 +131,7 @@ footer .social-media img {
   border-radius: 80px;
   background-color: var(--yellow);
   box-shadow: 2px 6px 8px rgba(24, 22, 22, 0.5);
+  cursor: pointer;
 }
 
 nav {
@@ -163,7 +165,7 @@ nav .nav-links li {
 }
 nav .nav-links li a {
   color: var(--black);
-  font-family: "Caveat";
+  font-family: "Caveat-Regular";
   font-size: 18px;
   text-decoration: none;
 }
@@ -207,31 +209,31 @@ nav .nav-links li a {
 }
 @font-face {
   font-family: "Caveat-Bold";
-  src: url("/css/fonts/Caveat-Bold.ttf");
+  src: url("../css/fonts/Caveat-Bold.ttf");
 }
 @font-face {
   font-family: "Caveat-Regular";
-  src: url("/css/fonts/Caveat-Regular.ttf");
+  src: url("../css/fonts/Caveat-Regular.ttf");
 }
 @font-face {
   font-family: "GillSans Italic";
-  src: url("/css/fonts/GillSansItalic.ttf");
+  src: url("../css/fonts/GillSansItalic.ttf");
 }
 @font-face {
-  font-family: "GillSans Italic";
-  src: url("/css/fonts/GillSans Italic.ttf");
+  font-family: "GillSans";
+  src: url("../css/fonts/GillSans.ttf");
 }
 @font-face {
   font-family: "GillSans Light";
-  src: url("/css/fonts/GillSans-Light.ttf");
+  src: url("../css/fonts/GillSans-Light.ttf");
 }
 @font-face {
   font-family: "Lato";
-  src: url("/css/fonts/Lato/Lato-Regular.ttf");
+  src: url("../css/fonts/Lato/Lato-Regular.ttf");
 }
 @font-face {
   font-family: "Lato Italic";
-  src: url("/css/fonts/Lato/Lato-Italic.ttf");
+  src: url("../css/fonts/Lato/Lato-Italic.ttf");
 }
 :root {
   --green: #A7E8BD;
@@ -253,6 +255,7 @@ nav .nav-links li a {
   border-radius: 80px;
   background-color: var(--yellow);
   box-shadow: 2px 6px 8px rgba(24, 22, 22, 0.5);
+  cursor: pointer;
 }
 
 * {
@@ -280,56 +283,6 @@ h1, h2, h3, h4, h5, h6, p {
   bottom: 225px;*/
   min-height: 100vh;
   width: 100vw;
-}
-
-@font-face {
-  font-family: "Caveat-Bold";
-  src: url("/css/fonts/Caveat-Bold.ttf");
-}
-@font-face {
-  font-family: "Caveat-Regular";
-  src: url("/css/fonts/Caveat-Regular.ttf");
-}
-@font-face {
-  font-family: "GillSans Italic";
-  src: url("/css/fonts/GillSansItalic.ttf");
-}
-@font-face {
-  font-family: "GillSans Italic";
-  src: url("/css/fonts/GillSans Italic.ttf");
-}
-@font-face {
-  font-family: "GillSans Light";
-  src: url("/css/fonts/GillSans-Light.ttf");
-}
-@font-face {
-  font-family: "Lato";
-  src: url("/css/fonts/Lato/Lato-Regular.ttf");
-}
-@font-face {
-  font-family: "Lato Italic";
-  src: url("/css/fonts/Lato/Lato-Italic.ttf");
-}
-:root {
-  --green: #A7E8BD;
-  --lightpink: #FCBCB8;
-  --pink: #EFA7A7;
-  --yellow: #FFD972;
-  --red: #F25C54;
-  --black: #191717;
-  --white: #F2F2F2;
-}
-
-.button {
-  width: 130px;
-  height: 55px;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  align-items: center;
-  border-radius: 80px;
-  background-color: var(--yellow);
-  box-shadow: 2px 6px 8px rgba(24, 22, 22, 0.5);
 }
 
 .home-content {
@@ -401,31 +354,31 @@ h1, h2, h3, h4, h5, h6, p {
 
 @font-face {
   font-family: "Caveat-Bold";
-  src: url("/css/fonts/Caveat-Bold.ttf");
+  src: url("../css/fonts/Caveat-Bold.ttf");
 }
 @font-face {
   font-family: "Caveat-Regular";
-  src: url("/css/fonts/Caveat-Regular.ttf");
+  src: url("../css/fonts/Caveat-Regular.ttf");
 }
 @font-face {
   font-family: "GillSans Italic";
-  src: url("/css/fonts/GillSansItalic.ttf");
+  src: url("../css/fonts/GillSansItalic.ttf");
 }
 @font-face {
-  font-family: "GillSans Italic";
-  src: url("/css/fonts/GillSans Italic.ttf");
+  font-family: "GillSans";
+  src: url("../css/fonts/GillSans.ttf");
 }
 @font-face {
   font-family: "GillSans Light";
-  src: url("/css/fonts/GillSans-Light.ttf");
+  src: url("../css/fonts/GillSans-Light.ttf");
 }
 @font-face {
   font-family: "Lato";
-  src: url("/css/fonts/Lato/Lato-Regular.ttf");
+  src: url("../css/fonts/Lato/Lato-Regular.ttf");
 }
 @font-face {
   font-family: "Lato Italic";
-  src: url("/css/fonts/Lato/Lato-Italic.ttf");
+  src: url("../css/fonts/Lato/Lato-Italic.ttf");
 }
 :root {
   --green: #A7E8BD;
@@ -447,6 +400,7 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 80px;
   background-color: var(--yellow);
   box-shadow: 2px 6px 8px rgba(24, 22, 22, 0.5);
+  cursor: pointer;
 }
 
 .login-container {
@@ -495,6 +449,183 @@ h1, h2, h3, h4, h5, h6, p {
   border-bottom: 3px solid var(--black);
   font-family: "Lato";
   font-size: 12px;
+}
+.login-container .user-forms-container .form #signUpBtn, .login-container .user-forms-container .form #loginInBtn {
+  font-family: "GillSans";
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .user-forms-container {
+    flex-direction: column;
+  }
+  footer, .footer-links {
+    width: 75%;
+  }
+  footer .footer-links li, .footer-links .footer-links li {
+    flex-wrap: wrap;
+    width: 50%;
+  }
+}
+.browse-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--green);
+  overflow: hidden;
+}
+.browse-container #browse-hero {
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.browse-container .browse-header {
+  position: absolute;
+  top: 100px;
+  left: 175px;
+  font-family: "Caveat-Bold";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.recipe-wrapper {
+  top: 175px;
+  left: 150px;
+  position: absolute;
+  max-height: 100%;
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.recipe-wrapper .recipe-holder {
+  width: 525px;
+  height: 275px;
+  display: flex;
+}
+.recipe-wrapper .recipe-holder .recipe-img {
+  height: 265px;
+  width: 300px;
+}
+.recipe-wrapper .recipe-holder .recipe-img img {
+  max-width: 300px;
+  min-height: 100%;
+  border-radius: 10%;
+}
+.recipe-wrapper .recipe-holder .recipe-content {
+  background-color: var(--white);
+  width: 225px;
+  border-radius: 10%;
+  height: 265px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.recipe-wrapper .recipe-holder .recipe-content .recipe-header h3 {
+  padding-top: 10px;
+  width: 130px;
+  font-family: "Lato";
+  font-size: 18px;
+  border-bottom: 2px solid var(--black);
+}
+.recipe-wrapper .recipe-holder .recipe-content .recipe-description p {
+  width: 135px;
+  height: 100px;
+  font-family: "Lato";
+  font-size: 9px;
+}
+.recipe-wrapper .recipe-holder .recipe-content .recipe-info {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  padding-left: 25px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Lato";
+  font-size: 12px;
+}
+.recipe-wrapper .recipe-holder .recipe-content .recipe-info img {
+  width: 25px;
+  height: 25px;
+}
+.recipe-wrapper .recipe-holder .recipe-content .recipe-info .recipe-time, .recipe-wrapper .recipe-holder .recipe-content .recipe-info .recipe-serving {
+  width: 150px;
+  height: 25px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.create-recipe-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  position: relative;
+}
+.create-recipe-container .create-recipe-form {
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  width: 980px;
+  padding: 20px;
+}
+.create-recipe-container .create-recipe-form h2 {
+  font-family: "Lato";
+  font-size: 20px;
+}
+.create-recipe-container .create-recipe-form .first-section #addImageBtn {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 100px;
+  height: 25px;
+  padding: 3px;
+  font-family: "Caveat-Regular";
+  text-align: center;
+  border-radius: 20px;
+  background-color: var(--pink);
+}
+.create-recipe-container .create-recipe-form .first-section input {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-bottom: 16px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--black);
+}
+.create-recipe-container .create-recipe-form .second-section h3 {
+  font-family: "Lato";
+  font-size: 16px;
+  color: var(--black);
+}
+.create-recipe-container .create-recipe-form .second-section input {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-bottom: 16px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--black);
+}
+.create-recipe-container .create-recipe-form .third-section h3 {
+  font-family: "Lato";
+  font-size: 16px;
+  color: var(--black);
+}
+.create-recipe-container .create-recipe-form .third-section input {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-bottom: 16px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--black);
 }
 
 /*# sourceMappingURL=styles.css.map */

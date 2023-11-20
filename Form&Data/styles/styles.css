@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: lightblue;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+nav {
+  background-color: #000;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+nav a {
+  text-align: center;
+  font-size: 18px;
+  color:#fff;
+  text-decoration: none;
+}
+#app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formHolder {
+  width: 900px;
+  background-color: lightblue;
+  padding-top: 20px;
+}
+
+.formTop {
+  position: relative;
+}
+
+.formTop .image-button {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 100px;
+  height: 30px;
+  background-color: cadetblue;
+  color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.formHolder input {
+ display: block;
+ width: 100%;
+ margin-bottom: 20px;
+ height: 50px;
+ border: none;
+ border-bottom: 2px solid #000;
+ padding-left: 5px;
+ background: transparent;
+}
+
+.formDesc, .formInstr {
+  margin-top: 100px;
+  position: relative;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  background-color: cadetblue;
+  color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.formDesc .desc-add-button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+  background-color: cadetblue;
+  color: #fff;
+}
+
+
+.instr-add-button {
+  position: absolute;
+  right: 10px;
+  top: 150px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-align: center;
+  background-color: cadetblue;
+  color: #fff;
+}
+
+.vr {
+  width: 820px;
+  min-height: 200px;
+  padding-top: 20px;
+}
+
+.recipe-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.recipe {
+  width: 400px;
+  min-height: 200px;
+  margin-bottom: 20px;
+}
+.recipe .image-holder{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.recipe .image-holder img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.descriptions {
+  margin-bottom: 20px;
+}
+
+ol, ul {
+  margin-left: 30px;
+  font-size: 16px;
+}
