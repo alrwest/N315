@@ -1,0 +1,11 @@
+//structure / site setup
+@import "footer.scss";
+@import "nav.scss";
+@import "variables.scss";
+@import "structure.scss";
+
+//pages
+@import "home.scss";
+@import "login.scss";
+@import "browse.scss";
+@import "createRecipe.scss";
