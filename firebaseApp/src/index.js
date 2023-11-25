@@ -15,9 +15,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-
-
-
 function initListeners() {
     $("#createAcctBtn").on("click", (e) => {
       e.preventDefault(); //prevents reload

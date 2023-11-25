@@ -1,6 +1,4 @@
 const path = require("path");
-
-
 module.exports = {
     mode: "development",
     entry: "./src/index.js",
@@ -8,5 +6,5 @@ module.exports = {
         path: path.resolve(__dirname, "dist/app"),
         filename: "app.js",
     },
-    watch: true, //seeting a watcher for any changes
+    watch: true, //setting a watcher for any changes
 }
