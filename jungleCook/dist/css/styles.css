@@ -151,7 +151,7 @@ nav .logo {
   align-items: center;
 }
 nav .nav-links {
-  width: 500px;
+  width: 700px;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -450,12 +450,9 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: "Lato";
   font-size: 12px;
 }
-.login-container .user-forms-container .form #sign-btn, .login-container .user-forms-container .form #loginInBtn {
+.login-container .user-forms-container .form #sign-up-btn, .login-container .user-forms-container .form #loginBtn {
   font-family: "GillSans";
   font-size: 25px;
-}
-.login-container .user-forms-container .form #sign-btn {
-  z-index: 999;
 }
 
 @media screen and (max-width: 768px) {
@@ -566,7 +563,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .create-recipe-container {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   background-color: var(--white);
   position: relative;
 }
@@ -578,14 +575,16 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 20px;
 }
 .create-recipe-container .create-recipe-form .welcome {
-  background-color: red;
   font-family: "Lato";
   font-size: 20px;
 }
+.create-recipe-container .create-recipe-form .first-section {
+  position: relative;
+}
 .create-recipe-container .create-recipe-form .first-section #addImageBtn {
   position: absolute;
-  top: 60px;
-  right: 20px;
+  top: 0;
+  right: 10px;
   width: 100px;
   height: 25px;
   padding: 3px;
@@ -603,6 +602,9 @@ h1, h2, h3, h4, h5, h6, p {
   border: none;
   border-bottom: 2px solid var(--black);
 }
+.create-recipe-container .create-recipe-form .second-section {
+  position: relative;
+}
 .create-recipe-container .create-recipe-form .second-section h3 {
   font-family: "Lato";
   font-size: 16px;
@@ -617,6 +619,20 @@ h1, h2, h3, h4, h5, h6, p {
   border: none;
   border-bottom: 2px solid var(--black);
 }
+.create-recipe-container .create-recipe-form .second-section .second-sect-add-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--pink);
+  color: var(--white);
+}
+.create-recipe-container .create-recipe-form .third-section {
+  position: relative;
+}
 .create-recipe-container .create-recipe-form .third-section h3 {
   font-family: "Lato";
   font-size: 16px;
@@ -630,6 +646,225 @@ h1, h2, h3, h4, h5, h6, p {
   background: transparent;
   border: none;
   border-bottom: 2px solid var(--black);
+}
+.create-recipe-container .create-recipe-form .third-section .third-sect-add-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--pink);
+  color: var(--white);
+}
+
+.user-recipes {
+  width: 100%;
+  height: 100%;
+  background-color: var(--green);
+  overflow: hidden;
+}
+.user-recipes #user-recipe-hero {
+  opacity: 0.4;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.user-recipes .user-recipe-wrapper {
+  top: 125px;
+  left: 100px;
+  position: absolute;
+  max-height: 100%;
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.user-recipes .user-recipe-wrapper .user-recipe-container {
+  width: 100%;
+}
+.user-recipes .user-recipe-wrapper .user-recipe-container h2 {
+  padding: 10px;
+}
+.user-recipes .user-recipe-wrapper .user-recipe-container .user-recipe-holder {
+  width: 525px;
+  height: 275px;
+  display: flex;
+}
+.user-recipes .user-recipe-wrapper .user-recipe-container .user-recipe-holder .user-recipe-img {
+  height: 265px;
+  width: 300px;
+}
+.user-recipes .user-recipe-wrapper .user-recipe-container .user-recipe-holder .user-recipe-img .viewRecipebtn {
+  position: absolute;
+  top: 175px;
+  left: 85px;
+  font-family: "Caveat-Regular";
+  font-size: 18px;
+}
+.user-recipes .user-recipe-wrapper .user-recipe-container .user-recipe-holder .user-recipe-img img {
+  min-width: 100%;
+  max-height: 100%;
+  border-radius: 10%;
+}
+.user-recipes .user-recipe-wrapper .user-recipe-container .user-recipe-holder .user-recipe-content {
+  background-color: var(--white);
+  width: 225px;
+  border-radius: 10%;
+  height: 265px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.user-recipes .user-recipe-wrapper .user-recipe-container .user-recipe-holder .user-recipe-content .user-recipe-header {
+  padding-top: 10px;
+  width: 130px;
+  font-family: "Lato";
+  font-size: 18px;
+  border-bottom: 2px solid var(--black);
+}
+.user-recipes .user-recipe-wrapper .user-recipe-container .user-recipe-holder .user-recipe-content .user-recipe-description p {
+  width: 135px;
+  height: 100px;
+  font-family: "Lato";
+  font-size: 9px;
+}
+.user-recipes .user-recipe-wrapper .user-recipe-container .user-recipe-holder .user-recipe-content .user-recipe-info {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  padding-left: 25px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Lato";
+  font-size: 12px;
+}
+.user-recipes .user-recipe-wrapper .user-recipe-container .user-recipe-holder .user-recipe-content .user-recipe-info img {
+  width: 25px;
+  height: 25px;
+}
+.user-recipes .user-recipe-wrapper .user-recipe-container .user-recipe-holder .user-recipe-content .user-recipe-info .user-recipe-time, .user-recipes .user-recipe-wrapper .user-recipe-container .user-recipe-holder .user-recipe-content .user-recipe-info .user-recipe-serving {
+  width: 150px;
+  height: 25px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.user-recipes .user-recipe-wrapper .user-recipe-container .user-recipe-btn-wrapper {
+  width: 500px;
+  height: 100px;
+  display: flex;
+  justify-content: left;
+}
+.user-recipes .user-recipe-wrapper .user-recipe-container .user-recipe-btn-wrapper .editRecipebtn, .user-recipes .user-recipe-wrapper .user-recipe-container .user-recipe-btn-wrapper .deleteRecipebtn {
+  margin: 10px;
+  font-family: "Caveat-Regular";
+  font-size: 18px;
+}
+
+.edit-recipe-container {
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--white);
+  position: relative;
+}
+.edit-recipe-container .edit-recipe-form {
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  width: 980px;
+  padding: 20px;
+}
+.edit-recipe-container .edit-recipe-form .welcome {
+  background-color: red;
+  font-family: "Lato";
+  font-size: 20px;
+}
+.edit-recipe-container .edit-recipe-form .first-section {
+  position: relative;
+}
+.edit-recipe-container .edit-recipe-form .first-section #addImageBtn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 100px;
+  height: 25px;
+  padding: 3px;
+  font-family: "Caveat-Regular";
+  text-align: center;
+  border-radius: 20px;
+  background-color: var(--pink);
+}
+.edit-recipe-container .edit-recipe-form .first-section input {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-bottom: 16px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--black);
+}
+.edit-recipe-container .edit-recipe-form .second-section {
+  position: relative;
+}
+.edit-recipe-container .edit-recipe-form .second-section h3 {
+  font-family: "Lato";
+  font-size: 16px;
+  color: var(--black);
+}
+.edit-recipe-container .edit-recipe-form .second-section input {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-bottom: 16px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--black);
+}
+.edit-recipe-container .edit-recipe-form .second-section .second-sect-add-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--pink);
+  color: var(--white);
+}
+.edit-recipe-container .edit-recipe-form .third-section {
+  position: relative;
+}
+.edit-recipe-container .edit-recipe-form .third-section h3 {
+  font-family: "Lato";
+  font-size: 16px;
+  color: var(--black);
+}
+.edit-recipe-container .edit-recipe-form .third-section input {
+  width: 100%;
+  display: block;
+  height: 35px;
+  margin-bottom: 16px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--black);
+}
+.edit-recipe-container .edit-recipe-form .third-section .third-sect-add-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--pink);
+  color: var(--white);
 }
 
 /*# sourceMappingURL=styles.css.map */

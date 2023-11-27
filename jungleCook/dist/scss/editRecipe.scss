@@ -1,11 +1,11 @@
-.create-recipe-container {
+.edit-recipe-container {
     width: 100%;
     min-height: 100%;
     background-color: var(--white);
     position: relative;
 
 
-    .create-recipe-form {
+    .edit-recipe-form {
         position: absolute;
         top: 50px;
         left: 250px;
@@ -13,7 +13,7 @@
         padding: 20px;
 
         .welcome {
-            //background-color: red;
+            background-color: red;
             font-family: "Lato";
             font-size: 20px;
         }
@@ -113,6 +113,7 @@
             border-radius: 50%;
             background-color: var(--pink);
             color: var(--white);
+
         }
     }
 
