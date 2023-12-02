@@ -1,4 +1,9 @@
-//
+
+//empty array for recipes
+var recipes = [];
+
+
+
 export function changePage(pagePathArray) {
     if (pagePathArray === "") {
         updateContent("Home");
@@ -24,3 +29,5 @@ export function updateContent(pageName) {
         } 
     });
 }
+
+

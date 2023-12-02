@@ -63,3 +63,16 @@
      box-shadow: 2px 6px 8px rgba(24, 22, 22, 0.5);
      cursor: pointer;
 }
+
+.submitButton {
+        width: 250px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        align-items: center;
+        border-radius: 80px;
+        background-color: var(--pink);
+        box-shadow: 2px 6px 8px rgba(24, 22, 22, 0.5);
+        cursor: pointer;
+   }

@@ -1,0 +1,38 @@
+{
+    "Products":[
+       {
+          "productName":"Camera",
+          "productImage":"camera.jpg",
+          "productDescShort":"This is a great camera",
+          "productDescLong":" Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloremque praesentium et minima mollitia quam est commodi, libero culpa! Tempore autem hic corporis! Incidunt, molestias! Id nam dolor tenetur soluta.",
+          "productPrice": "49.99"
+       },
+
+       {
+        "productName":"Bike",
+        "productImage":"bike.jpg",
+        "productDescShort":"This is a great bike",
+        "productDescLong": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloremque praesentium et minima mollitia quam est commodi, libero culpa! Tempore autem hic corporis! Incidunt, molestias! Id nam dolor tenetur soluta.",
+        "productPrice": "199.99"
+     },
+
+     {
+        "productName":"Pencil",
+        "productImage":"pencil.jpg",
+        "productDescShort":"This is a great pencil",
+        "productDescLong":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloremque praesentium et minima mollitia quam est commodi, libero culpa! Tempore autem hic corporis! Incidunt, molestias! Id nam dolor tenetur soluta.",
+        "productPrice": "3.99"
+     },
+     {
+        "productName":"Water Bottle",
+        "productImage":"water-bottle.jpg",
+        "productDescShort":"This is a great water bottle",
+        "productDescLong": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur doloremque praesentium et minima mollitia quam est commodi, libero culpa! Tempore autem hic corporis! Incidunt, molestias! Id nam dolor tenetur soluta.",
+        "productPrice": "1.99"
+     }
+
+    ],
+    "Cart":[
+       
+    ]
+ }

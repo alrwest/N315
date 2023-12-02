@@ -8,6 +8,7 @@ mobileNav.addEventListener("click", () => {
 });
 
 
+
 function initListeners() {
     $(".nav-links a").on("click", (e) => {
         e.preventDefault();
@@ -15,9 +16,24 @@ function initListeners() {
         let navigation = e.currentTarget.id;
         updateContent(navigation);
     });
-
-
 }
+
+
+/**
+ * Implementing "create" feature
+ */
+
+var initialIngredCount = 3;
+var initialInstrCount = 3;
+
+export function addListener() {
+    //add another line for ingredients
+    $(".second-sect-add-btn").on("click", (e) => {
+        initialIngredCount++;
+    })
+}
+
+
 
 $(document).ready(function() {
     initListeners();
