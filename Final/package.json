@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "live-server dist",
+    "build-webpack": "webpack",
+    "compile sass": "sass dist/scss/styles.scss dist/css/styles.css -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "firebase": "^10.7.0"
+    "firebase": "^10.7.0",
+    "sass": "^1.69.5"
   },
   "devDependencies": {
     "webpack": "^5.89.0",
