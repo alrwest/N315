@@ -63,7 +63,7 @@ export function loadProducts() {
     $(".product-wrapper").append(`
       <div class="product">
       <div class="productImage">
-        <img src="/images/${Products.productImage}" alt="Keurig" />
+        <img src="./images/${Products.productImage}" alt="Keurig" />
       </div>
       <div class="productDetails">
         <div class="color-selection">
