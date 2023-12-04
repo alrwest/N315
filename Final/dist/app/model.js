@@ -1,5 +1,5 @@
 //importing functions
-import { loadCart, loadProducts, getData } from "./app.js";
+import { loadCart, loadProducts } from "./app.js";
 
 //routing
 export function changeRoute() {
@@ -8,7 +8,6 @@ export function changeRoute() {
 
   if (pageID != "" && pageID != "home") {
     $.get(`pages/${pageID}.html`, function (data) {
-      console.log("not home " + data);
       $("#app").html(data);
       loadCart();
     });

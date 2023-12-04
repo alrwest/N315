@@ -17,11 +17,11 @@ function displayModal() {
 
 //loading cart functionality
 export function loadCart() {
-  console.log(productData.Cart);
+  console.log("cart data: ", productData.Cart);
   $(".cart").html(""); //cart starts empty
   $.each(productData.Cart, (idx, cartItem) => {
     let Products = productData.Products[cartItem.itemIdx];
-    $(".cart").append(`
+    $(".cart-wrapper").append(`
     <div class="product">
       <div class="productImage">
         <img src="./images/${Products.productImage}" alt="Keurig" />
@@ -87,7 +87,7 @@ export function loadProducts() {
           <div><i class="fa-solid fa-truck-fast"></i></div>
           <p>Free Shipping</p>
         </div>
-        <div class="buy-btn">Buy Now</div>
+        <div id="${idx}" class="buy-btn">Buy Now</div>
       </div>
     </div> `);
   });
@@ -99,16 +99,16 @@ export function loadProducts() {
       itemIdx: productIdx,
     };
     productData.Cart.push(newObj);
-    console.log("cart info: " + productData.Cart);
+    //console.log("cart info: " + productData.Cart);
     cartCount = productData.Cart.length;
-    updateCartCount(); // updating our cart count
+    updateCartCount(); // updating cart count
   });
 }
 
 function updateCartCount() {
   //if cart count is at 0,
   if (cartCount == 0) {
-    $(".cartCounter").css("display", "block");
+    $(".cartCounter").css("display", "none");
   } else if (cartCount >= 1) {
     $(".cartCounter").css("display", "block");
     $(".cartCounter").html(cartCount);
@@ -118,7 +118,7 @@ function updateCartCount() {
 }
 
 //data retrieval
-export function getData() {
+function getData() {
   return $.get(`data/data.json`)
     .done(function (data) {
       productData = data;

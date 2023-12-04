@@ -1,8 +1,7 @@
-
 //empty array for recipes
 var recipes = [];
 
-export function changePage(pagePathArray) {
+/*export function changePage(pagePathArray) {
     if (pagePathArray === "") {
         updateContent("Home");
     } else {
@@ -13,9 +12,10 @@ export function changePage(pagePathArray) {
         }
     } 
 }
+*/
 
 //routing pages
-export function updateContent(pageName) {
+/*export function updateContent(pageName) {
     $.ajax({
         url: `../pages/${pageName}.html`,
         type: "GET",
@@ -25,5 +25,22 @@ export function updateContent(pageName) {
         } 
     });
 }
+*/
 
+//routing
+export function changeRoute() {
+  let hashTag = window.location.hash;
+  let pageID = hashTag.replace("#", "");
 
+  if (pageID != "" && pageID != "Home") {
+    $.get(`pages/${pageID}.html`, function (data) {
+      $("#app").html(data);
+    });
+  } else {
+    //loading home
+    $.get(`pages/Home.html`, function (data) {
+      console.log("Home " + data);
+      $("#app").html(data);
+    });
+  }
+}

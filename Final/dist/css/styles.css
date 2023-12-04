@@ -522,7 +522,7 @@ footer {
   margin: 0 auto;
 }
 
-.product-wrapper {
+.product-wrapper, .cart-wrapper {
   height: 100%;
   width: 1200px;
   display: flex;
@@ -681,6 +681,9 @@ footer {
   height: 300px;
   display: flex;
   justify-content: center;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .user-forms-container {
@@ -702,7 +705,8 @@ footer {
 .button {
   width: 75px;
   height: 30px;
-  background-color: var(--brown);
+  background-color: var(--white);
+  border: 2px solid var(--brown);
   border-radius: 10px;
   margin-top: 20px;
   margin-left: 35px;
@@ -716,6 +720,29 @@ input {
   background: transparent;
   color: var(--black);
   padding: 2px;
+}
+
+.button input {
+  margin: 5px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--black);
+  padding: 2px;
+}
+
+.button input:hover {
+  transition: ease-in 0.2s;
+  background-color: var(--brown);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.button:hover {
+  transition: ease-in 0.2s;
+  background-color: var(--brown);
+  color: var(--white);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
