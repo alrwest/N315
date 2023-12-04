@@ -1,8 +1,7 @@
 footer {
     width: 85%;
     height: 200px;
-    margin: 0 auto;
-
+    margin: 50px auto;
     font-family: "roboto", sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -114,7 +113,7 @@ footer {
 }
 
 .select-country {
-    width: 200px;
+    width: 225px;
     display: flex;
     justify-content: space-between;
 }
@@ -122,9 +121,15 @@ footer {
 .country-icon {
     border-radius: 50%;
     border: 2px solid grey;
-    background-color: #ffd700;
+    opacity: 0.8;
     height: 30px;
     width: 30px;
+}
+
+.country-icon img {
+    max-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .select-country-header {
@@ -137,13 +142,17 @@ footer {
 }
 
 .country-dropdwn {
-    width: 150px;
+    width: 180px;
     height: 30px;
     opacity: 0.4;
     border-radius: 6px;
-    background-color: grey;
+    display: flex;
+    justify-content: space-evenly;
     margin: 0 auto;
+    padding: 5px;
+    background-color: grey;
 }
+
 
 
 .bottom-footer {

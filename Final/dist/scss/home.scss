@@ -1,0 +1,79 @@
+.home-wrapper {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.hero {
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.dropMenu-container {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.dropMenu {
+    width: 350px;
+    height: 50px;
+    border: 2px solid grey;
+    margin-left: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.dropMenu p {
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.dropMenu:hover {
+    border: 2px solid var(--black);
+}
+
+.sort-box {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.sort-header {
+    margin-left: 25px;
+    color: var(--brown);
+}
+
+.sort-box p, .sort-box i {
+    color: var(--brown);
+}
+.sort-filter {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 0 auto;
+}

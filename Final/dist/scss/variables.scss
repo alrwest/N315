@@ -4,8 +4,15 @@
     --beige: #ECE9E4;
     --brown: #473036;
     --blue: #3C5A7B;
-    --black: #191717;
+    --black: #333333;
     --white: #F2F2F2;
+
+
+    //coffee maker color variables
+    --red: #BA3A55;
+    --light-blue:#A4CFD3;
+    --sand: #DDC6A5;
+    --mint: #A8BBA2;
    }
 
 
@@ -21,4 +28,40 @@
         font-family: "roboto", sans-serif;
         font-weight: 200;
         font-style: normal;
+*/
+
+
+/**** Product template
+ <div class="product">
+      <div class="productImage">
+        <img src="/images/K-Elite.webp" alt="K-Elite" />
+      </div>
+      <div class="productDetails">
+        <div class="color-selection">
+          <div class="circle" id="circle1"></div>
+          <div class="circle" id="circle2"></div>
+          <div class="circle" id="circle3"></div>
+          <div class="circle" id="circle4"></div>
+        </div>
+        <h3>Keurig K-Elite Single Serve Coffee Maker</h3>
+        <p class="price">SALE $19.99</p>
+        <p class="price">$19.99</p>
+        <div class="ratings">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <div class="ratings-line"></div>
+          <div>(4095)</div>
+        </div>
+        <div class="shipping">
+          <div><i class="fa-solid fa-truck-fast"></i></div>
+          <p>Free Shipping</p>
+        </div>
+        <div class="buy-btn">Buy Now</div>
+      </div>
+    </div>
+
+
+
 */

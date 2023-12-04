@@ -1,0 +1,86 @@
+{
+    "Products":[
+       {
+        "productName":"Keurig K-Elite Single Serve Coffee Maker",
+          "productImage": "K-Elite.webp",
+          "salePrice": "49.99",
+          "productPrice": "118.99"
+       },
+
+       {
+        "productName":"Keurig K-Select Coffee Maker",
+        "productImage": "K-Select.webp",
+        "salePrice": "",
+        "productPrice": "69.99"
+     },
+
+     {
+        "productName":"K-Mini Single Serve Coffee Maker",
+        "productImage": "K-Mini.webp",
+        "salePrice": "",
+        "productPrice": "71.99"
+     },
+
+     {
+        "productName":"Keurig K-155 OfficePRO System",
+        "productImage": "K-K155.webp",
+        "salePrice": "",
+        "productPrice": "294.99"
+     },
+
+     {
+        "productName":"Keurig K-Cafe SMART Single Serve Coffee Maker",
+        "productImage": "K-Cafe.webp",
+        "salePrice": "124.99",
+        "productPrice": "249.99"
+     },
+
+     {
+        "productName":"Keurig K-Slim Single Serve Coffee Maker",
+        "productImage": "K-Slim.webp",
+        "salePrice": "124.99",
+        "productPrice": "249.99"
+     },
+     {
+        "productName":"Keurig K-Duo Single Serve & Carafe Coffee Maker",
+        "productImage": "K-Duo.webp",
+        "salePrice": "94.99",
+        "productPrice": "119.99"
+     },
+     {
+        "productName":"Keurig K-Duo Plus Single Serve & Carafe Coffee Maker",
+        "productImage": "K-Duo-Plus.webp",
+        "salePrice": "124.99",
+        "productPrice": "249.99"
+     },
+
+     {
+        "productName":"Keurig K-Iced Single Serve Coffee Maker",
+        "productImage": "K-Iced.webp",
+        "salePrice": "49.99",
+        "productPrice": "59.99"
+     },
+
+     {
+        "productName":"Keurig K-Supreme SMART Single Serve Coffee Maker",
+        "productImage": "K-Supreme.webp",
+        "salePrice": "89.99",
+        "productPrice": "179.99"
+     },
+     {
+      "productName":"Keurig K-Supreme SMART Single Serve Coffee Maker",
+      "productImage": "K-Supreme.webp",
+      "salePrice": "89.99",
+      "productPrice": "179.99"
+   },
+   {
+      "productName":"Keurig K-Compact Single Serve Coffee Maker",
+      "productImage": "K-Compact.webp",
+      "salePrice": "39.99",
+      "productPrice": "69.99"
+   }
+    ],
+    "Cart":[
+       
+    ]
+ }

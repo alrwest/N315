@@ -14,6 +14,16 @@
     ></script>
   </head>
   <body>
+    <div id="banner-modal">
+      <div class="banner-content">
+        <div>Get Gifts on time: Standard Delivery 12/16/23</div>
+        <div><i class="fa-solid fa-diamond"></i></div>
+        <div>Express Delivery 12/18/23</div>
+        <div><i class="fa-solid fa-diamond"></i></div>
+        <div>Expedited Delivery 12/19/23</div>
+      </div>
+      <div class="close"><i class="fa-solid fa-xmark fa-xl"></i></div>
+    </div>
     <nav>
       <div class="nav-top">
         <div class="logo">
@@ -35,8 +45,11 @@
           <div class="nav-anchor">
             <ul>
               <li><a href="#">Support</a></li>
-              <li><a href="#">Account</a></li>
-              <li><a href="#">Cart</a></li>
+              <li><a href="#Login">Account</a></li>
+              <li>
+                <a href="#Cart">Cart</a>
+                <div class="cartCounter">0</div>
+              </li>
             </ul>
           </div>
         </div>
@@ -62,71 +75,36 @@
       </div>
       <div class="nav-bottom">
         <div class="nav-bottom-sect">
-          <h3>
+          <h5>
             $140 off K-Elite Coffee Maker with Keurig <br />
             <h6>Starter Kit Ends 12/4. See Details</h6>
-          </h3>
+          </h5>
         </div>
         <div class="vertical-line"></div>
         <div class="nav-bottom-sect">
-          <h3>Up to 30% Price Drop - New Varieties Added!</h3>
+          <h5>Up to 30% Price Drop - New Varieties Added!</h5>
         </div>
         <div class="vertical-line"></div>
         <div class="nav-bottom-sect">
-          <h3>
+          <h5>
             Save $80 and get the K-Select Coffee Maker <br />
             for $69.99
-          </h3>
+          </h5>
         </div>
         <div class="vertical-line"></div>
         <div class="nav-bottom-sect">
-          <h3>
+          <h5>
             Save $50 and get the K-Slim Coffee Maker <br />
             for $79.99
-          </h3>
+          </h5>
         </div>
       </div>
     </nav>
-    <div id="app">
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum provident
-        quae optio autem commodi sit nihil excepturi velit fugit dolore eius non
-        sunt similique amet, voluptates delectus omnis officiis! Laudantium!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque corporis
-        possimus expedita repellendus, alias dolores consequuntur sapiente
-        officiis voluptatibus odit autem facere. Architecto culpa, molestiae est
-        incidunt nostrum aliquid explicabo!
-      </div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum provident
-        quae optio autem commodi sit nihil excepturi velit fugit dolore eius non
-        sunt similique amet, voluptates delectus omnis officiis! Laudantium!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque corporis
-        possimus expedita repellendus, alias dolores consequuntur sapiente
-        officiis voluptatibus odit autem facere. Architecto culpa, molestiae est
-        incidunt nostrum aliquid explicabo!
-      </div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum provident
-        quae optio autem commodi sit nihil excepturi velit fugit dolore eius non
-        sunt similique amet, voluptates delectus omnis officiis! Laudantium!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque corporis
-        possimus expedita repellendus, alias dolores consequuntur sapiente
-        officiis voluptatibus odit autem facere. Architecto culpa, molestiae est
-        incidunt nostrum aliquid explicabo!
-      </div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum provident
-        quae optio autem commodi sit nihil excepturi velit fugit dolore eius non
-        sunt similique amet, voluptates delectus omnis officiis! Laudantium!
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque corporis
-        possimus expedita repellendus, alias dolores consequuntur sapiente
-        officiis voluptatibus odit autem facere. Architecto culpa, molestiae est
-        incidunt nostrum aliquid explicabo!
-      </div>
-    </div>
+    <div id="app"></div>
     <script src="lib/jquery-3.7.1.min.js"></script>
-    <script src="app/app.js"></script>
+    <script type="module" src="app/app.js"></script>
+    <script type="module" src="app/model.js"></script>
+    <script type="module" src="app/bundle.js"></script>
     <footer>
       <div class="footer-banner">
         <div class="banner-container">
@@ -194,8 +172,13 @@
           <hr />
           <p class="select-country-header">Select Country</p>
           <div class="select-country">
-            <div class="country-icon"></div>
-            <div class="country-dropdwn">United States</div>
+            <div class="country-icon">
+              <img src="./images/flag-icon.png" alt="flag-icon" />
+            </div>
+            <div class="country-dropdwn">
+              <p>United States</p>
+              <div><i class="fa-solid fa-angle-down"></i></div>
+            </div>
           </div>
         </div>
       </div>

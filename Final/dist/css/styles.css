@@ -66,13 +66,13 @@ nav {
 }
 
 .search-bar h4 {
-  opacity: 0.5;
+  opacity: 0.7;
   color: var(--brown);
   position: relative;
   left: 70px;
   bottom: 6px;
   font-family: "roboto", sans-serif;
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -95,12 +95,24 @@ nav {
 }
 
 .nav-links {
+  position: relative;
   margin-top: 10px;
 }
 
 .nav-links li, a {
   list-style: none;
   text-decoration: none;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--brown);
+}
+
+.cartCounter {
+  position: absolute;
+  top: 0px;
+  right: 40px;
+  color: var(--black);
 }
 
 .nav-icons {
@@ -138,7 +150,7 @@ nav {
   width: 100%;
   display: flex;
   margin: 0 auto;
-  padding: 10px;
+  padding: 5px;
   justify-content: space-evenly;
   font-size: 14px;
   font-family: "roboto", sans-serif;
@@ -156,13 +168,14 @@ nav {
 }
 
 .nav-bottom {
+  height: 100px;
   width: 100%;
   background-color: var(--brown);
   display: flex;
   text-align: center;
   color: var(--white);
   font-family: "roboto", sans-serif;
-  font-weight: 500;
+  font-weight: 200;
   font-style: normal;
   justify-content: space-evenly;
 }
@@ -180,18 +193,23 @@ nav {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 16px;
+  padding: 10px;
 }
 
-.nav-bottom-sect h3 {
+.nav-bottom-sect h5 {
   margin-top: 15px;
   text-align: center;
   font-size: 14px;
 }
 
+.deals {
+  color: #dc143c;
+}
+
 footer {
   width: 85%;
   height: 200px;
-  margin: 0 auto;
+  margin: 50px auto;
   font-family: "roboto", sans-serif;
   font-weight: 200;
   font-style: normal;
@@ -300,7 +318,7 @@ footer {
 }
 
 .select-country {
-  width: 200px;
+  width: 225px;
   display: flex;
   justify-content: space-between;
 }
@@ -308,9 +326,15 @@ footer {
 .country-icon {
   border-radius: 50%;
   border: 2px solid grey;
-  background-color: #ffd700;
+  opacity: 0.8;
   height: 30px;
   width: 30px;
+}
+
+.country-icon img {
+  max-width: 100%;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .select-country-header {
@@ -323,12 +347,15 @@ footer {
 }
 
 .country-dropdwn {
-  width: 150px;
+  width: 180px;
   height: 30px;
   opacity: 0.4;
   border-radius: 6px;
-  background-color: grey;
+  display: flex;
+  justify-content: space-evenly;
   margin: 0 auto;
+  padding: 5px;
+  background-color: grey;
 }
 
 .bottom-footer {
@@ -359,8 +386,12 @@ footer {
   --beige: #ECE9E4;
   --brown: #473036;
   --blue: #3C5A7B;
-  --black: #191717;
+  --black: #333333;
   --white: #F2F2F2;
+  --red: #BA3A55;
+  --light-blue:#A4CFD3;
+  --sand: #DDC6A5;
+  --mint: #A8BBA2;
 }
 
 /*font variables
@@ -376,5 +407,315 @@ footer {
         font-weight: 200;
         font-style: normal;
 */
+/**** Product template
+ <div class="product">
+      <div class="productImage">
+        <img src="/images/K-Elite.webp" alt="K-Elite" />
+      </div>
+      <div class="productDetails">
+        <div class="color-selection">
+          <div class="circle" id="circle1"></div>
+          <div class="circle" id="circle2"></div>
+          <div class="circle" id="circle3"></div>
+          <div class="circle" id="circle4"></div>
+        </div>
+        <h3>Keurig K-Elite Single Serve Coffee Maker</h3>
+        <p class="price">SALE $19.99</p>
+        <p class="price">$19.99</p>
+        <div class="ratings">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <div class="ratings-line"></div>
+          <div>(4095)</div>
+        </div>
+        <div class="shipping">
+          <div><i class="fa-solid fa-truck-fast"></i></div>
+          <p>Free Shipping</p>
+        </div>
+        <div class="buy-btn">Buy Now</div>
+      </div>
+    </div>
+
+
+
+*/
+.home-wrapper {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 1200px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.dropMenu-container {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.dropMenu {
+  width: 350px;
+  height: 50px;
+  border: 2px solid grey;
+  margin-left: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.dropMenu p {
+  padding: 5px;
+  margin: 0 auto;
+}
+
+.dropMenu:hover {
+  border: 2px solid var(--black);
+}
+
+.sort-box {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.sort-header {
+  margin-left: 25px;
+  color: var(--brown);
+}
+
+.sort-box p, .sort-box i {
+  color: var(--brown);
+}
+
+.sort-filter {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.product-wrapper {
+  height: 100%;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.product {
+  width: 300px;
+  background-color: #f2f2f2;
+  border-radius: 2px;
+  box-shadow: 2px 2px 16px var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  margin: 50px;
+}
+
+.product:hover {
+  border: 2px solid var(--brown);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.productImage {
+  width: 200px;
+  height: 200px;
+}
+
+.productImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.color-selection {
+  width: 225px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+#circle1 {
+  background-color: var(--red);
+}
+
+#circle2 {
+  background-color: var(--mint);
+}
+
+#circle3 {
+  background-color: var(--light-blue);
+}
+
+#circle4 {
+  background-color: var(--black);
+}
+
+.productDetails {
+  margin-top: 30px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.productDetails h3 {
+  text-align: left;
+}
+
+.price {
+  color: #dc143c;
+  font-size: 20px;
+}
+
+.ratings {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ratings-line {
+  width: 2px;
+  height: 25px;
+  background-color: var(--black);
+  margin: 5px;
+}
+
+.shipping {
+  width: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.buy-btn {
+  width: 225px;
+  height: 50px;
+  padding: 10px;
+  border: 2px solid #daa520;
+  color: var(--brown);
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.buy-btn:hover {
+  border-color: var(--black);
+  transition: ease-in-out 0.2s;
+}
+
+#banner-modal {
+  width: 100%;
+  height: 50px;
+  background-color: var(--blue);
+  z-index: 99;
+}
+
+.banner-content {
+  width: 65%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: content;
+  padding: 15px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: var(--white);
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.close i {
+  position: absolute;
+  top: 25px;
+  right: 60px;
+  color: var(--white);
+}
+
+.login-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.user-forms-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.form {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button {
+  width: 75px;
+  height: 30px;
+  background-color: var(--brown);
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+input {
+  margin: 5px;
+  border: 0;
+  border-bottom: 2px solid var(--brown);
+  outline: 0;
+  background: transparent;
+  color: var(--black);
+  padding: 2px;
+}
 
 /*# sourceMappingURL=styles.css.map */

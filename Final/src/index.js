@@ -1,6 +1,12 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import {
+  updateProfile,
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+} from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -19,3 +25,80 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+
+//keeping login session info until current session or tab is closed
+export function userAuthStateChanged() {
+  onAuthStateChanged(auth, (user) => {
+    console.log("user: ", user);
+    if (user) {
+      const userName = user.displayName;
+      console.log("username:" + userName);
+      displayUserName(userName);
+    } else {
+      console.log("user is not logged in.");
+    }
+  });
+}
+
+//display a user's name, if logged in
+function displayUserName(userName) {
+  if (!userName) {
+    console.log("user does not exist.");
+  } else {
+    const userName = user.displayName;
+    console.log("display the name:" + userName);
+    $(".welcome").text(`Welcome, ${userName}`);
+  }
+}
+
+function authListeners() {
+  console.log("Listening..");
+
+  $(document).on("click", "#sign-up-btn", (e) => {
+    e.preventDefault(); // Prevent reload
+    let firstName = $("#firstName").val();
+    let lastName = $("#lastName").val();
+    let email = $("#provideEmail").val();
+    let pass = $("#createPassword").val();
+    console.log("Account created for: " + firstName + " " + lastName);
+
+    createUserWithEmailAndPassword(auth, email, pass)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        return updateProfile(user, { displayName: firstName });
+      })
+      .then(() => {
+        displayUserName(userName);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert("Error Message: " + errorMessage);
+      });
+  });
+
+  $(document).on("click", "#loginBtn", (e) => {
+    e.preventDefault(); // Prevent reload
+    console.log("Logging in..");
+    let email = $("#loginEmail").val();
+    let pass = $("#loginPassword").val();
+    console.log("credientials acquired");
+
+    signInWithEmailAndPassword(auth, email, pass)
+      .then(() => {
+        // Signed In
+        console.log("Current user:" + auth.currentUser);
+        displayUserName(auth.currentUser);
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert("Error Message: " + errorMessage);
+      });
+  });
+}
+
+$(document).ready(function () {
+  userAuthStateChanged();
+  authListeners();
+});
